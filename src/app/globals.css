@@ -16,18 +16,23 @@
   }
 }
 
-@layer components{
+@layer components {
+  .button {
+    @apply px-2 bg-slate-300 hover:bg-slate-900 hover:text-white ease-in-out rounded-md;
+  }
 
-.button{
-  @apply px-2 bg-slate-300 hover:bg-slate-900 hover:text-white ease-in-out rounded-md}
+  .table_head {
+    @apply p-2 border-b-4 text-xs  font-semibold text-black;
+  }
 
-.table_head{
-@apply p-2 border-b-4 text-xs  font-semibold text-black}
-
-.table_body{
-@apply pt-3 pr-8 border-b-2}}
+  .table_body {
+    @apply pt-3 pr-8 border-b-2;
+  }
+}
 body {
   color: rgb(var(--foreground-rgb));
+  width: 100vw;
+  overflow-x: hidden;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -36,22 +41,20 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-
-.sidebar{
-position: fixed;
-top: 0;
-left: 0;
-height: 100vh;
-z-index: 100;}
-
-.body{
-margin-left: 240px;
-margin-top: 100px;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
 }
 
+.body {
+  margin-left: 240px;
+  
+}
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px) {
   .body {
     margin-left: 120px;
   }
@@ -61,23 +64,11 @@ margin-top: 100px;
     margin-right: 0;
     margin-left: 120px;
     width: 470px;
-    
   }
 }
 
 @media screen and (max-width: 480px) {
-
 }
 
-.body {
-  margin-top: 100px;
-  overflow-x :hidden;
-}
-
-.header {
-  position: fixed;
-  top: 20px;
-  z-index: 100;
-}
 
 

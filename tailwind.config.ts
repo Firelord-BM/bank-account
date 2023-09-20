@@ -16,7 +16,7 @@ const config: Config = {
           xl: '5rem',
           '2xl': '6rem',
         },
-        center:true,
+        
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

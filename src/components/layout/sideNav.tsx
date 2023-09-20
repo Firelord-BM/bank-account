@@ -78,7 +78,7 @@ const SideNav = () => {
                     </ul>
                 )
             })}
-            <footer className="border-b-2 pt-6 text-center"> All rights reserved</footer>
+            <footer className="border-b-2 pt-6 mx-auto text-center md:flex hidden"> All rights reserved</footer>
 
         </div>
     )
